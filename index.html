@@ -105,6 +105,10 @@
     <span>📋</span>
     Adm Kepeg Penyuluh
   </a>
+<a class="button" href="#" onclick="openPresensiKementan()">
+  <span>📲</span>
+  Presensi Kementan
+</a>
 
 </div>
 
@@ -116,6 +120,18 @@
   if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('sw.js');
   }
+</script>
+<script>
+function openPresensiKementan() {
+  window.location.href = "intent://#Intent;package=id.go.pertanian.epersonal;end";
+  setTimeout(function(){
+    window.location.href = "https://play.google.com/store/apps/details?id=id.go.pertanian.epersonal";
+  }, 2000);
+}
+
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('sw.js');
+}
 </script>
 
 </body>
